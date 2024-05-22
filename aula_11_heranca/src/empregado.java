@@ -65,4 +65,10 @@ public class empregado {
         }
         return aux;
         }
+
+        public void imprimir(){
+        System.out.println ("Nome: " + getNome ());
+        System.out.println ("Endereco: " + getEndereço());
+        System.out.println ("Slario: " + getSalario());
+        }
 }

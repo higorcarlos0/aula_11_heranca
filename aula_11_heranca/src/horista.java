@@ -1,5 +1,6 @@
 public class horista  extends empregado{
     private double horas;
+    private double vl_horas;
 
     public double getHoras() {
         return horas;
@@ -9,9 +10,10 @@ public class horista  extends empregado{
         this.horas = horas;
     }
 
-    public horista(String nome, String endereço, Double salario, double horas) {
+    public horista(String nome, String endereço, Double salario, double horas, double vl_horas) {
         super(nome, endereço, salario);
         this.horas = horas;
+        this.vl_horas = vl_horas;
     }
 
     public horista(double horas) {
@@ -19,6 +21,6 @@ public class horista  extends empregado{
     }
     
     public void calculoSalario (){
-        salario = horas * 50;
+        salario = horas * vl_horas;
     }
 }
